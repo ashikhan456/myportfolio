@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: pink;
+}
+header {
+    width: 100%;
+     background: linear-gradient(to right, #6b3e49, #ed8c9c, #f7d5e1);
+     border-bottom: 5px solid rgb(245, 244, 244);
+}
+
+ .navbar {
+            width: 90%;
+            margin: auto;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(244, 182, 182);
+    font-size: 1.1em;
+ border: 1px solid rgb(244, 229, 238);
+    padding: 5px 12px;
+    border-radius: 19px;
+    background-color: #6b3e49;
+}
+.navbar ul li a:hover{
+    background: pink;
+    color: black;
+    transition: 0.6s;
+}
+
+.hero{
+    min-height:500px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+     padding: 40px 10%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 45px;
+    color: #470212;
+    margin: 10px 0;
+}
+
+.hero-text h2{
+    font-size: 28px;
+    color: #815058;
+    margin-bottom: 15px;
+}
+
+.hero-text .p1 {
+    font-size: 40px;
+    line-height: 0.9;
+    margin-bottom:2px;
+}
+
+.hero-text .p2 {      
+     font-size: 20px;
+     color: #6b3e49;
+     
+}
+
+.hero-btn{
+      display: inline-block;
+    padding: 10px 20px;
+    background: #470212;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 12px;
+    }
+    .hero-btn:hover{
+        background-color: rgb(144, 86, 95);
+        color: #f0e4e6;
+        transition: 0.5s;
+    }
+
+    .hero-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(249, 247, 247);
+}
+
+.about{
+     padding: 30px 10%;
+    text-align: center;
+    background-color: #f7d5e1;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: #470212;
+    margin-bottom: 8px;
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background-color: #470212;
+    margin: 0 auto 30px;
+}
+.about-content{
+    border: 2px solid black;
+    background-color: #f0e4e6;
+    width: 100%;
+  padding: 25px 30px;
+
+ 
+}
+
+.about p{
+  width:100%;
+  font-size: 17px;
+  font-style: italic;
+  color: #4e2129;
+}
+
+.button .about-btn{
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #470212;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 12px 15px;
+}
+
+.about-btn:hover {
+    background-color: #f8f8f8;
+    color: rgb(61, 16, 23);
+    border: 2px solid red;
+}
+ 
+.skills{
+  padding: 70px 10%;
+    background-color: pink;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-top: -34px;
+    font-size: 40px;
+    color: #470212;
+    margin-bottom: 8px;
+}
+
+.skills .line {
+    width: 70px;
+    height: 4px;
+    background-color: #470212;
+    margin: 0 auto 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.skill-card{
+    background-color: #ed8c9c;
+    padding:30px 20px;
+    border: 2px solid rgb(33, 5, 5);
+    border-radius: 25px;
+}
+
+.skill-card h3 {
+    color: #470212;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.skills p{
+        color: #333;
+    font-size: 12px;
+    line-height: 1.2;
+    background-color: #f7d5e1;
+    padding:12px 17px;
+    border: 2px solid rgb(27, 11, 11);
+    border-style: dashed;
+    border-radius: 45%;
+}
+
+.skill-card:hover {
+    background-color: #f3c6d0;
+}
+
+.skill-card:hover h3,
+.skill-card:hover p {
+    color: rgb(50, 31, 31);
+}
+
+.projects {
+    padding: 70px 10%;
+    background-color: #f7d5e1;
+    text-align: center;
+}
+
+.projects-heading{
+     margin-top: -34px;
+    font-size: 40px;
+    color: #470212;
+    margin-bottom: 8px;
+}
+.projects-heading h2 {
+    font-size: 40px;
+    color: #470212;
+    margin-bottom: 8px;
+}
+.projects-heading .line {
+    width: 70px;
+    height: 4px;
+    background-color: #470212;
+    margin: 0 auto 15px;
+}
+
+.projects-heading p {
+    font-size: 17px;
+    color: #6b3e49;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #f3c6d0;
+       padding: 30px 20px;
+       border: 1px solid rgb(73, 40, 53);
+        border-radius: 20px;
+          transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background-color: #f3c6d0;
+    box-shadow: 0 8px 18px rgba(71, 2, 18, 0.2);
+}
+
+.project-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.project-card h3{
+    color: #333;
+    font-size: 23px;
+    margin: 15px;
+}
+
+.project-card p {
+    font-size: 17px;  
+    line-height: 1.6;
+    min-height: 100px;
+}
+.project-tech {
+      color: #470212;
+          font-size: 17px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+.project-btn {
+    display: inline-block;
+   text-decoration: none;
+   background-color: #f0e4e6;
+   color: #4e2129;
+   padding: 12px 15px;
+   border-radius: 6px;
+   border:2px solid black;
+  border-style:dotted;
+   margin-top: 10px;
+    transition: 0.4s;
+}
+
+.project-btn:hover {
+    background-color: #815058;
+    color: white;
+}
+
+ .contact{
+     padding: 70px 10%;
+       background-color: pink;
+        text-align: center;
+ }
+
+
+.contact-heading{
+    margin-bottom: 40px;
+}
+
+.contact-heading h2{
+    font-size: 40px;
+      color: #470212;
+    margin-bottom: 8px;
+      margin-top: -34px;
+}
+.contact-heading .line {
+    width: 70px;
+    height: 4px;
+    background-color: #470212;
+    margin: 0 auto 15px;
+}
+ 
+.contact-heading p{
+    font-size: 19px;
+    color: #470212;
+}
+
+.contact-container{
+      display: grid;
+        grid-template-columns: 1fr 1.3fr;
+          gap: 30px;
+    text-align: left;
+}
+
+.contact-info{
+     background-color: #ed8c9c;
+       padding: 30px;
+         border: 2px solid #470212;
+    border-radius: 20px;
+}
+
+ .contact-info h3 {
+    font-size: 25px;
+    color: #470212;
+    margin-bottom: 15px;
+}
+.contact-info p{
+    font-size: 15px;
+     line-height: 1.6;
+    color: #4e2129;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    margin-bottom: 22px;
+}
+.contact-info h4{
+     font-size: 18px;
+    color: #470212;
+    margin-bottom: 5px;
+}
+
+.contact-detail p,
+.contact-detail a {
+    text-decoration: none;
+   color: rgb(61, 35, 39);
+   background-color: #f0e4e6;
+   padding: 2px 4px;
+   display: inline-block;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+.contact-form{
+     background-color: #f7d5e1;
+    padding: 30px;
+    border: 2px solid #470212;
+    border-radius: 20px;
+}
+
+.contact-form h3 {
+    font-size: 25px;
+    color: #470212;
+    margin-bottom: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #815058;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid #470212;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* SEND BUTTON */
+
+.contact-form button {
+    padding: 12px 25px;
+    background-color: #470212;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact-form button:hover {
+    background-color: #815058;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .contact {
+        padding: 50px 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-heading h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* FOOTER SECTION */
+
+.footer {
+    background-color: #470212;
+    color: #f7d5e1;
+    padding: 50px 10% 20px;
+    text-align: center;
+}
+
+/* FOOTER CONTENT */
+
+.footer-content h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-content h2 span {
+    color: #ed8c9c;
+}
+
+.footer-content > p {
+    font-size: 15px;
+    color: #e8b8c5;
+    margin-bottom: 25px;
+}
+
+/* FOOTER LINKS */
+
+.footer-links,
+.footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 22px;
+}
+
+.footer a {
+    color: #f7d5e1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #ed8c9c;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    border-top: 1px solid #815058;
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #e8b8c5;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        padding: 40px 5% 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-social {
+        gap: 15px;
+    }
+
+}
+
+
+/* =================================
+   TABLET VIEW (768px - 1024px)
+================================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* HERO */
+    .hero {
+        padding: 40px 6%;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text .p1 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* SKILLS */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PROJECTS */
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CONTACT */
+    .contact-container {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 22px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE VIEW (Max 767px)
+================================= */
+
+@media screen and (max-width: 767px) {
+
+    /* NAVBAR */
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 15px 5%;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 6%;
+        gap: 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text .p1 {
+        font-size: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text h2 {
+        font-size: 23px;
+    }
+
+    .hero-text .p2 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+
+    /* ABOUT SECTION */
+    .about {
+        padding: 40px 5%;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        padding: 20px 15px;
+    }
+
+    .about p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* SKILLS SECTION */
+    .skills {
+        padding: 50px 5%;
+    }
+
+    .skills h2 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 25px 18px;
+    }
+
+
+    /* PROJECTS SECTION */
+    .projects {
+        padding: 50px 5%;
+    }
+
+    .projects-heading {
+        margin-top: 0;
+    }
+
+    .projects-heading h2 {
+        font-size: 32px;
+    }
+
+    .projects-heading p {
+        font-size: 15px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 25px 18px;
+    }
+
+    .project-card p {
+        min-height: auto;
+        font-size: 15px;
+    }
+
+
+    /* CONTACT SECTION */
+    .contact {
+        padding: 50px 5%;
+    }
+
+    .contact-heading h2 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    .contact-heading p {
+        font-size: 15px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 22px 18px;
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 22px;
+    }
+
+
+    /* FOOTER SECTION */
+    .footer {
+        padding: 40px 5% 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 28px;
+    }
+
+    .footer-content > p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer-links,
+    .footer-social {
+        gap: 15px;
+    }
+
+    .footer a {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+/* =================================
+   SMALL MOBILE VIEW (Max 400px)
+================================= */
+
+@media screen and (max-width: 400px) {
+
+    .navbar ul {
+        gap: 8px;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .hero-text h1 {
+        font-size: 27px;
+    }
+
+    .hero-image img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .skills h2,
+    .projects-heading h2,
+    .contact-heading h2 {
+        font-size: 28px;
+    }
+
+}
+
+ </style>
+</head>
+<body>
+    <header>
+       <nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<!--HERO SECTION-->
+<section class="hero" id="home">
+
+    <!-- Left Side -->
+    <div class="hero-text">
+        <p class="p1">Hello, I'm</p>
+        <h1>Ayesha Aurangzeb</h1>
+        <h2>Web Developer</h2>
+
+        <p class="p2">
+            <i>"I create simple and user-friendly websites.
+            I enjoy learning new technologies and building creative projects."</i>
+        </p>
+
+        <a href="#projects" class="hero-btn">View My Work</a>
+    </div>
+
+    <!-- Right Side Picture -->
+    <div class="hero-image">
+        <img src="white niwqabi.PNG" alt="Profile Picture">
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-heading">
+        <h2>About Me</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="about-content">
+        <p>
+        " I am a Computer Science student with an interest in web
+            development. I enjoy creating simple, responsive and
+            user-friendly websites.
+        </p>
+
+        <p>
+            I have worked with HTML, CSS, JavaScript, PHP and MySQL,
+            and I am continuously improving my development skills
+            by working on different projects."
+        </p>
+    </div>
+
+    <div class="button">
+         <a href="#contact" class="about-btn">Contact Me</a>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+
+    <h2>My Skills</h2>
+    <div class="line"></div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Creating structured and semantic web pages.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Designing responsive and attractive web pages.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Adding basic functionality and interactivity to websites.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>PHP</h3>
+            <p>Working with basic backend development and forms.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>MySQL</h3>
+            <p>Creating databases and working with SQL queries.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>C++</h3>
+            <p>Understanding programming fundamentals and OOP concepts.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+
+<section class="projects" id="projects">
+
+    <div class="projects-heading">
+        <h2>My Projects</h2>
+        <div class="line"></div>
+        <p>
+            Explore some of my recent work and creative projects.
+        </p>
+    </div>
+
+    <div class="projects-container">
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">🧮</div>
+
+            <h3>Calculator</h3>
+
+            <p>
+                A simple and user-friendly calculator
+                built using HTML, CSS and JavaScript.
+                It performs basic arithmetic operations.
+            </p>
+
+            <div class="project-tech">
+                HTML | CSS | JavaScript
+            </div>
+
+            <a href="https://ashikhan456.github.io/pinky-calculator/"
+               target="_blank" class="project-btn">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">📝</div>
+
+            <h3>Smart To-Do List</h3>
+
+            <p>
+                A task management application that
+                allows users to add, edit, delete
+                and manage their daily tasks.
+            </p>
+
+            <div class="project-tech">
+                HTML | CSS | JavaScript | PHP | MySQL
+            </div>
+
+            <a href="#" class="project-btn">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">🌐</div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A personal portfolio website designed
+                to showcase my skills, projects
+                and web development journey.
+            </p>
+
+            <div class="project-tech">
+                HTML | CSS
+            </div>
+
+            <a href="#home" class="project-btn">
+                View Project
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+        <h2>Contact Me</h2>
+        <div class="line"></div>
+
+        <p>
+            Have a project or opportunity in mind?
+            Feel free to contact me.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                I would love to hear from you.
+                Feel free to reach out for any
+                questions or opportunities.
+            </p>
+
+            <div class="contact-detail">
+                <h4>Email</h4>
+                <p>your-email@example.com</p>
+            </div>
+
+            <div class="contact-detail">
+                <h4>Location</h4>
+                <p>Pakistan</p>
+            </div>
+
+            <div class="contact-detail">
+                <h4>LinkedIn</h4>
+                <a href="#" target="_blank">Visit My LinkedIn</a>
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form">
+
+            <h3>Send Me a Message</h3>
+
+            <form action="#" method="post">
+
+                <input type="text"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Your Email"
+                       required>
+
+                <input type="text"
+                       placeholder="Subject"
+                       required>
+
+                <textarea rows="5"
+                          placeholder="Your Message"
+                          required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- FOOTER SECTION -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>Ayesha<span>.</span></h2>
+
+        <p>
+            Creating beautiful and meaningful digital experiences.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="mailto:your-email@example.com">Email</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Ayesha Aurangzeb. All Rights Reserved.</p>
+        <p>Designed with ♡</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
